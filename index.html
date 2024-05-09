@@ -2,181 +2,35 @@
 <html lang="pl-PL">
 <head>
     <meta charset="UTF-8">
-    <title>Marcelino - wine by nature</title>
-    <meta name="description" content="Marcelino - wine by nature">
-    <meta name="keywords" content="wino, bag in box, wino z czerwonej porzeczki, wino z ananasa, korzenne wino z jabłek, marcelino">
-    <meta name="author" content="Mateusz Graja">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="all">
-    <link rel="stylesheet" href="styl.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="img/favicon.jpg" type="image/x-icon">
+    <title>Potwierdzenie wieku</title>
+    <meta name="author" content="Mateusz Graja">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <a id="marcelino_anchor" name="marcelino"></a>
-    <div id="content">
-            <nav id="navbar" class="navbar navbar-expand-xl navbar-custom">
-                <div class="container">
-                    <div class="mobil-nav">
-                        <a class="navbar-brand" href="#">
-                            <img id="menu-logo" src="img/logo.png" alt="Logo Marcelino">
-                        </a>
-                        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-lable="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse justify-content-end" id="toggleMobileMenu">
-                        <ul class="navbar-nav">
-                            <li>
-                                <a class="navigation-link navigation-link-top" onclick="hide_menu()" href="#poznaj nas">POZNAJ NAS</a>
-                            </li>
-                            <li>
-                                <a class="navigation-link navigation-link-top" onclick="hide_menu()" href="#nasze wino">NASZE WINO</a>
-                            </li>
-                            <li>
-                                <a class="navigation-link navigation-link-top" onclick="hide_menu()" href="#współpraca">WSPÓŁPRACA</a>
-                            </li>
-                            <li>
-                                <a class="navigation-link navigation-link-top" onclick="hide_menu()" href="#kontakt">KONTAKT</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        <div id="header">
-            <img id="bacground-header" src="img/background.png"/>
-            <img id="logo-header" src="img/logo.png">
-        </div>
-        <div id="page-content">
-            <div id="poznaj-nas-content">
-                <h4 class="poznaj-nas-title"><a name="poznaj nas" class="information-poznaj-nas-anchor">POZNAJ NAS</a></h4>
-                <div id="poznaj-nas-container">
-                    <div id="poznaj-nas-left">
-                        <div id="poznaj-nas-image">
-                            <img id="poznaj-nas-img" src="img/poznaj-nas.png" alt="poznaj-nas">
-                        </div>
-                        <div id="poznaj-nas-wina">
-                            <div id="poznaj-nas-wina-info">
-                                <p>WSZYSTKIE NASZE WINA TWORZYMY W ZGODZIE Z NATURĄ</p>
-                                <b>NIE Z KONCENTRATU</b><br>
-                                <b>BEZ SZTUCZNYCZ AROMATÓW</b><br>
-                                <b>BEZ WZMACNIACZY SMAKU</b><br>
-                                <b>BEZ BARWNIKÓW</b><br>
-                            </div>
-                            <div id="wyjatek"><p>*z wyjątkiem ananasów</p></div>
-                        </div>
-                    </div>
-                    <div id="poznaj-nas-info">
-                        <div id="poznaj-nas-intro">
-                            <b>Cześć! Nazywamy się Marcelina i Maciej!</b>
-                            <p>Od 2022 roku prowadzimy małą winiarnie gdzie produkujemy wino owocowe jakościowe.</p>
-                        </div>
-                        <div id="poznaj-nas-writing">
-                            <p>Wszystkie nasze wina powstają w dokładnie taki sam sposób jak tradycyjne wina gronowe:</p>
-                            <ul>
-                                <li>owoc trafia na prasę gdzie wyciskany jest moszcz, który następnie pompujemy do stalowej kadzi fermentacyjnej,</li>
-                                <li>zaszczepiamy nastaw szalchetnymi drożdżami,</li>
-                                <li>nastęnie wino jest klarowane w naturalny sposób poprzez odpowiednio długie leżakowanie,</li>
-                                <li>nie używamy soków zagęszczonych, barwników ani aromatów, wszystkie walory zapachowe i smakowe są wynikiem naturalnej fermentacji,</li>
-                                <li>jesteśmy producentem win owocowych jakościowych,</li>
-                                <li>każda butelka jest ręcznie rozlewana, korkowana i etykietowana.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    <div class="age-background">
+        <div class="age-container">
+            <img class="age-logo" src="img/logo.png" alt="Logo" />
+            <p class="age-question">Czy masz ukończone 18 lat?</p>
+            <div class="age-buttons">
+                <button id="yes-button" class="age-button" onclick="location.href='main-website.html';">TAK</button>
+                <button id="no-button" class="age-button">NIE</button>
             </div>
-            <div id="shop-content">
-                <a name="nasze wino" class="information-nasze-wino-anchor"></a>
-                <div class="ctn-content">
-                    <div class="wino">
-                        <img class="owoc" src="img/porzeczka.jpg" alt="porzeczka">
-                        <div class="wino-text" id="porzeczka-text">
-                            <div class="wino-title"><b>CZERWONA PORZECZKA</b></div>
-                            <div class="wino-content">
-                                <p>półsłodka, 9,5 % alk.</p>
-                                <p>Dojrzewająca w słońcu czerwona porzeczka od lokalnych rolników. Jej słodycz oraz kwasowość tworzą idealne połączenie.</p>
-                                <p>Polecamy pić schłodzone lub na lodzie</p>
-                            </div>
-                        </div>
-                        <img class="product" src="img/porzeczka-butelka.png" alt="porzeczka-butelka">
-                    </div>
-                    <div class="wino" id="right">
-                        <img class="owoc" src="img/ananas.jpg" alt="ananas">
-                        <div class="wino-text" id="ananas-text">
-                            <div class="wino-title"><b>ANANAS</b></div>
-                            <div class="wino-content">
-                                <p>półwytrawny, 14% alk.</p>
-                                <p>To wino jakościowe swój niepowtarzalny smak oraz naturalny armot zawdzięcza dojrzałym owocom ananasa.</p>
-                                <p>Spróbuj je schłodzone, na lodzie lub zblenduj razem z kawałkami mrożonego ananasa!</p>
-                            </div>
-                        </div>
-                        <img class="product" src="img/ananas-butelka.png" alt="porzeczka-butelka">
-                    </div>
-                    <div class="wino">
-                        <img class="owoc" src="img/jablko.jpg" alt="jablko">
-                        <div class="wino-text" id="jablko-text">
-                            <div class="wino-title"><b>KORZENNE WINO JABŁKOWE</b></div>
-                            <div class="wino-content">
-                                <p>półsłodkie, 13% alk.</p>
-                                <p>Niezwykle aromatyczne wino feremntowane w kadziach wraz z kardamonem, cynamonem oraz goździkami. Swój aromat zawdzięcza jedynie naturalnym przyprawom.</p>
-                                <p>Polecamy pić je na kostkach lodu lub podgrzać do około 50 stopni i kosztować jako grzane wino w chłodne wieczory</p>
-                            </div>
-                        </div>
-                        <img class="product" src="img/jablko-butelka.png" alt="jablko-butelka">
-                    </div>
-                </div>
-            </div>
-            <div id="bag-in-box-content">
-                <div id="bag-in-box-image">
-                    <img id="bag-in-box-img" src="img/bag-in-box.png" alt="bag in box">
-                </div>
-                <div id="bag-in-box-text">
-                    <div id="bag-in-box-title"><b>BAG IN BOX</b></div>
-                    <div id="bag-in-box-writing">
-                        <p>Oferujemy nasze wina również w pojemnikach bag in box o pojemności 5 litrów. Wino po otwarciu nie ma kontaktu z powietrzem - przez długi czas zachowując swój niepowtarzalny smak, świeżość oraz naturalny aromat.</p>
-                        <p>Idealnie sprawdzi się na spotkaniach ze znajomymi oraz rodziną.</p>
-                    </div>
-                </div>
-            </div>
-            <div id="kontakt">
-                <h4><a name="kontakt-title" class="information-kontakt-anchor">KONTAKT</a> </h4>
-                <div id="custom-order"><p>Skontaktuj się z nami aby zamówić wino</p></div>
-                <div id="contact-info">
-                    <div class="box" id="nip-box">
-                        <ul>
-                            <li>NIP: 781 2043670</li>
-                            <li>KRS: 0001004837</li>
-                            <li>REGON: 523773272</li>
-                            <li>BDO: 000589068</li>
-                        </ul>
-                    </div>
-                    <div class="box" id="contact-box">
-                        <ul>
-                            <li><span class="contact-info"><i class="fa fa-phone" style="font-size:24px"></i> Maciej Nowakowski<br>tel. +48 505 376 590</span></li>
-                            <li><span class="contact-info"><i class="fa fa-phone" style="font-size:24px"></i> Marcelina Bobula<br>tel. +48 667 369 072</span></li>
-                            <li><span class="contact-info"><i class="fa fa-envelope" style="font-size:24px"></i> <a class="mail-link" href="mailto:biuro.marcelino@gmail.com">biuro.marcelino@gmail.com</a></span></li>
-                        </ul>                        
-                    </div>
-                    <div class="box" id="socials-box">
-                        <div id="socials-img">
-                            <a target="_blank" href="https://www.facebook.com"></a><img id="facebook-img" src="img/facebook-icon.png" alt="facebook marcelino"></a>
-                            <a target="_blank" href="https://www.instagram.com/wino.marcelino/"><img id="instagram-img" src="img/instagram-icon.png" alt="instagram marcelino"></a>
-                        </div>
-                        <div id="socials-text">
-                            <p>wino.marcelino</p>
-                            <div id="tag-us">
-                                <p>Tag us in your photos!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p id="age-message"></p>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="navbar-scroll.js"></script>
-    <script type="text/javascript" src="navbar.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const noButton = document.getElementById('no-button');
+            const ageMessage = document.getElementById('age-message');
+
+            noButton.addEventListener('click', function() {
+                ageMessage.textContent = "Nie możesz oglądać zawartości, nie masz skończonych 18 lat";
+            });
+        });
+
+    </script>
 </body>
 </html>

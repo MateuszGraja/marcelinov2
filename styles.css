@@ -1,0 +1,77 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.age-background {
+    background-image: url('img/age-background.png');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.age-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 20%;
+    padding-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.age-logo {
+    max-width: 75%;
+}
+
+.age-question {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+}
+
+.age-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.age-button {
+    padding: 10px 20px;
+    margin: 0 2em;
+    border: none;
+    background-color: #D6867F;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.age-button:hover {
+    background-color: rgb(190, 106, 98);
+}
+
+#age-message{
+    padding: 0 2em;
+    color: red;
+    font-weight: bold;
+}
+
+/* Responsywność */
+@media (max-width: 1100px) {
+    .age-container {
+        width: 60%;
+    }
+
+    .age-button {
+        margin: 0 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .age-container {
+        width: 80%;
+    }
+}
